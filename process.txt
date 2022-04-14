@@ -1,0 +1,78 @@
+50_run_controller_relaunch_main_schedule_versatilepb.sh 
+	51_controller_relaunch_main_schedule_versatilepb.sh
+		32_main_schedule_versatilepb.sh
+			21_heart_beat_from_guest.sh
+			33_clean_guest.sh 
+				14_recover_public_ip.sh
+			24_retrive_new_rootfs.sh
+			31_relaunch_guest_versatilepb.sh
+				14_recover_public_ip.sh
+				04_start_qemu_versatilepb.sh
+				11_test_guest_init_status.sh
+				12_install_raspmonitor.sh
+				13_replace_public_ip.sh
+			06_setup_host_rsyslog.sh 
+			96_start_zeek.sh
+			94_start_tcpdump_with_name.sh 
+			_00_run_log_parsers.py
+			22_check_ssh_success_count_versatilepb.sh
+				33_clean_guest.sh
+					14_recover_public_ip.sh
+				24_retrive_new_rootfs.sh
+				97_stop_zeek.sh
+				95_stop_tcpdump_with_name.sh
+				31_relaunch_guest_versatilepb.sh
+					14_recover_public_ip.sh
+					04_start_qemu_versatilepb.sh
+					11_test_guest_init_status.sh
+					12_install_raspmonitor.sh
+					13_replace_public_ip.sh
+				06_setup_host_rsyslog.sh
+				96_start_zeek.sh
+				94_start_tcpdump_with_name.sh
+			23_check_telnet_success_count_versatilepb.sh
+				33_clean_guest.sh
+					14_recover_public_ip.sh
+				24_retrive_new_rootfs.sh
+				97_stop_zeek.sh
+				95_stop_tcpdump_with_name.sh
+				_09_kill_log_parsers.py
+				31_relaunch_guest_versatilepb.sh
+					14_recover_public_ip.sh
+					04_start_qemu_versatilepb.sh
+					11_test_guest_init_status.sh
+					12_install_raspmonitor.sh
+					13_replace_public_ip.sh
+				06_setup_host_rsyslog.sh
+				96_start_zeek.sh
+				94_start_tcpdump_with_name.sh
+				_00_run_log_parsers.py
+			14_recover_public_ip.sh
+		35_kill_32_urgently.sh
+			25_backup_rootfs.sh
+			33_clean_guest.sh
+				14_recover_public_ip.sh
+		95_stop_tcpdump_with_name.sh
+		97_stop_zeek.sh
+		_09_kill_log_parsers.py
+
+
+70_general_auto_setup.sh
+	00_prepare_kernels.sh 
+	01_install_dependencies.sh 
+		_10_install_zeek.py 
+	02_setup_host_net.sh
+	03_setup_forwarding.sh
+	07_block_outgoing_scanning.sh
+	15_replace_host_ssh.sh
+	09_check_iptables.sh
+
+
+
+52_kill_51_gracefully.sh
+	34_kill_32_gracefully.sh
+		33_clean_guest.sh
+			14_recover_public_ip.sh
+	95_stop_tcpdump_with_name.sh
+	97_stop_zeek.sh
+	93_check_what_is_alive.sh

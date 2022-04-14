@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+NEED TO CONFIRM
+需要明确virtual device需求
+	是否需要现在的log和zeek
+	是否需要改强密码× 或者换其他强登录验证方式
+	是否需要增加安装包
+
+
+
+
+
+
+
+
+1. need more user-friendly
+
+remove the log parser
+
+remove the zeek invoke and usage
+
+change the password to a strong one 
+
+install more software
+
+
+2. build for our testbed
+part of the sandbox - how to ensure the security
