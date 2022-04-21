@@ -65,16 +65,16 @@ node.hardware_type = "m510"
 # node.hardware_type = "c240g5"
 iface = node.addInterface()
 node.disk_image = params.osImage
-fsnode = request.RemoteBlockstore("bs", params.MPOINT)
-fsnode.dataset = params.DATASET
+#fsnode = request.RemoteBlockstore("bs", params.MPOINT)
+#fsnode.dataset = params.DATASET
 
-fslink = request.Link("fslink")
-fslink.addInterface(iface)
-fslink.addInterface(fsnode.interface)
+#fslink = request.Link("fslink")
+#fslink.addInterface(iface)
+#fslink.addInterface(fsnode.interface)
 
 # Special attributes for this link that we must use.
-fslink.best_effort = True
-fslink.vlan_tagging = True
+#fslink.best_effort = True
+#fslink.vlan_tagging = True
 
 
 # Install
